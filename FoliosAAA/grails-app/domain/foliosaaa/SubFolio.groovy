@@ -5,12 +5,11 @@ import java.util.Date;
 
 class SubFolio {
 
-	
-	static belongsTo = [folio:Folio]
-	
+	Folio folio
+		
 	Date fecha
 	Integer numero
-	Byte[] pdf
+	Byte[] pdf2
 	
     static constraints = {
 		fecha nullable:true

@@ -18,6 +18,14 @@
 	<g:field name="numero" type="number" value="${folioInstance.numero}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: folioInstance, field: 'cagada', 'error')} required">
+	<label for="cagada">
+		<g:message code="folio.cagada.label" default="Cagada" />
+		<span class="required-indicator">*</span>
+	</label>
+	<input type="file" id="cagada" name="cagada" />
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: folioInstance, field: 'institucion', 'error')} required">
 	<label for="institucion">
 		<g:message code="folio.institucion.label" default="Institucion" />
@@ -31,6 +39,6 @@
 		<g:message code="folio.pdf.label" default="Pdf" />
 		<span class="required-indicator">*</span>
 	</label>
-	<input type="file" id="pdf" name="pdf" />
+	
 </div>
 

@@ -2,12 +2,13 @@ package foliosaaa
 
 class Folio {
     
-	//static hasMany = [institucion: Institucion]
+	
 	Institucion institucion
 
 	Date fecha
 	Integer numero
-	Byte pdf
+	File pdf
+	Byte [] cagada
 	
     static constraints = {
 		fecha nullable:true 

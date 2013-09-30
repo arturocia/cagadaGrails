@@ -28,6 +28,8 @@
 					
 						<g:sortableColumn property="numero" title="${message(code: 'folio.numero.label', default: 'Numero')}" />
 					
+						<g:sortableColumn property="cagada" title="${message(code: 'folio.cagada.label', default: 'Cagada')}" />
+					
 						<th><g:message code="folio.institucion.label" default="Institucion" /></th>
 					
 						<g:sortableColumn property="pdf" title="${message(code: 'folio.pdf.label', default: 'Pdf')}" />
@@ -41,6 +43,8 @@
 						<td><g:link action="show" id="${folioInstance.id}">${fieldValue(bean: folioInstance, field: "fecha")}</g:link></td>
 					
 						<td>${fieldValue(bean: folioInstance, field: "numero")}</td>
+					
+						<td>${fieldValue(bean: folioInstance, field: "cagada")}</td>
 					
 						<td>${fieldValue(bean: folioInstance, field: "institucion")}</td>
 					

@@ -41,6 +41,13 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${folioInstance?.cagada}">
+				<li class="fieldcontain">
+					<span id="cagada-label" class="property-label"><g:message code="folio.cagada.label" default="Cagada" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${folioInstance?.institucion}">
 				<li class="fieldcontain">
 					<span id="institucion-label" class="property-label"><g:message code="folio.institucion.label" default="Institucion" /></span>
@@ -53,6 +60,8 @@
 				<g:if test="${folioInstance?.pdf}">
 				<li class="fieldcontain">
 					<span id="pdf-label" class="property-label"><g:message code="folio.pdf.label" default="Pdf" /></span>
+					
+						<span class="property-value" aria-labelledby="pdf-label"><g:fieldValue bean="${folioInstance}" field="pdf"/></span>
 					
 				</li>
 				</g:if>

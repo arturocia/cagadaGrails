@@ -1,4 +1,4 @@
-package foliosaaa
+package mx.com.amiba.foliosaaa
 
 import java.awt.TexturePaintContext.Byte;
 import java.util.Date;

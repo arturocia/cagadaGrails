@@ -2,7 +2,10 @@ package foliosaaa
 
 
 
+import mx.com.amiba.foliosaaa.SubFolio;
+
 import org.junit.*
+
 import grails.test.mixin.*
 
 @TestFor(SubFolioController)

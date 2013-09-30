@@ -1,5 +1,7 @@
 package foliosaaa
 
+import mx.com.amiba.foliosaaa.Folio;
+
 import org.springframework.dao.DataIntegrityViolationException
 
 class FolioController {

@@ -3,6 +3,8 @@ package foliosaaa
 
 
 import grails.test.mixin.*
+import mx.com.amiba.foliosaaa.Role;
+
 import org.junit.*
 
 /**

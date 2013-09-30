@@ -1,4 +1,4 @@
-package com.FoliosAAA.security
+package mx.com.amiba.security
 
 import org.apache.commons.lang.builder.HashCodeBuilder
 

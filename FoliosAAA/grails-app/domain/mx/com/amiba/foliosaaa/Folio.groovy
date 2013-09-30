@@ -1,4 +1,4 @@
-package foliosaaa
+package mx.com.amiba.foliosaaa
 
 class Folio {
     

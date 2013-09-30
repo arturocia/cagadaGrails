@@ -1,8 +1,8 @@
-package com.FoliosAAA.security
+package mx.com.amiba.security
 
 class Role {
 
-	String authority
+	String authority 
 
 	static mapping = {
 		cache true

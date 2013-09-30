@@ -1,5 +1,7 @@
 package foliosaaa
 
+import mx.com.amiba.foliosaaa.SubFolio;
+
 import org.springframework.dao.DataIntegrityViolationException
 
 class SubFolioController {

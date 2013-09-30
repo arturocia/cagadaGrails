@@ -1,4 +1,4 @@
-package foliosaaa
+package mx.com.amiba.controller.foliosaaa
 
 import mx.com.amiba.foliosaaa.Institucion;
 

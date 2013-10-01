@@ -1,5 +1,5 @@
 
-<%@ page import="foliosaaa.Institucion" %>
+<%@ page import="mx.com.amiba.foliosaaa.Institucion" %>
 <!DOCTYPE html>
 <html>
 	<head>

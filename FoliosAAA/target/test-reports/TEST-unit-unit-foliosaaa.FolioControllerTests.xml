@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="Mac-Pro-de-Alfredo.local" name="foliosaaa.FolioControllerTests" tests="8" time="2.829" timestamp="2013-10-01T00:26:23">
+  <properties />
+  <testcase classname="foliosaaa.FolioControllerTests" name="testIndex" time="1.455" />
+  <testcase classname="foliosaaa.FolioControllerTests" name="testList" time="0.568" />
+  <testcase classname="foliosaaa.FolioControllerTests" name="testCreate" time="0.113" />
+  <testcase classname="foliosaaa.FolioControllerTests" name="testSave" time="0.169">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/folio/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@6a8690a3&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/folio/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@6a8690a3
+
+	at foliosaaa.FolioControllerTests.testSave(FolioControllerTests.groovy:52)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.FolioControllerTests" name="testShow" time="0.185">
+    <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testShow(FolioControllerTests.groovy:66)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.FolioControllerTests" name="testEdit" time="0.074">
+    <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testEdit(FolioControllerTests.groovy:84)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.FolioControllerTests" name="testUpdate" time="0.085">
+    <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testUpdate(FolioControllerTests.groovy:104)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.FolioControllerTests" name="testDelete" time="0.073">
+    <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testDelete(FolioControllerTests.groovy:148)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+  <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+</testsuite>

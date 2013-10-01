@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="5" hostname="Mac-Pro-de-Alfredo.local" id="0" name="FolioControllerTests" package="foliosaaa" tests="8" time="2.829" timestamp="2013-10-01T00:26:23">
+      <properties />
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testIndex" time="1.455" />
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testList" time="0.568" />
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testCreate" time="0.113" />
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testSave" time="0.169">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/folio/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@6a8690a3&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/folio/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@6a8690a3
+
+	at foliosaaa.FolioControllerTests.testSave(FolioControllerTests.groovy:52)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testShow" time="0.185">
+          <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testShow(FolioControllerTests.groovy:66)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testEdit" time="0.074">
+          <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testEdit(FolioControllerTests.groovy:84)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testUpdate" time="0.085">
+          <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testUpdate(FolioControllerTests.groovy:104)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.FolioControllerTests" name="testDelete" time="0.073">
+          <failure message="Assertion failed: &#xa;&#xa;assert folio.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       mx.com.amiba.foliosaaa.Folio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert folio.save() != null
+       |     |      |
+       |     null   false
+       mx.com.amiba.foliosaaa.Folio : (unsaved)
+
+	at foliosaaa.FolioControllerTests.testDelete(FolioControllerTests.groovy:148)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="Mac-Pro-de-Alfredo.local" id="1" name="InstitucionControllerTests" package="foliosaaa" tests="8" time="0.81" timestamp="2013-10-01T00:26:26">
+      <properties />
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testIndex" time="0.186" />
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testList" time="0.059" />
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testCreate" time="0.061" />
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testSave" time="0.087">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/institucion/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@63dad2ac&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/institucion/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@63dad2ac
+
+	at foliosaaa.InstitucionControllerTests.testSave(InstitucionControllerTests.groovy:52)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testShow" time="0.074">
+          <failure message="Assertion failed: &#xa;&#xa;assert institucion.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       mx.com.amiba.foliosaaa.Institucion : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert institucion.save() != null
+       |           |      |
+       |           null   false
+       mx.com.amiba.foliosaaa.Institucion : (unsaved)
+
+	at foliosaaa.InstitucionControllerTests.testShow(InstitucionControllerTests.groovy:66)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testEdit" time="0.073">
+          <failure message="Assertion failed: &#xa;&#xa;assert institucion.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       mx.com.amiba.foliosaaa.Institucion : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert institucion.save() != null
+       |           |      |
+       |           null   false
+       mx.com.amiba.foliosaaa.Institucion : (unsaved)
+
+	at foliosaaa.InstitucionControllerTests.testEdit(InstitucionControllerTests.groovy:84)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testUpdate" time="0.073">
+          <failure message="Assertion failed: &#xa;&#xa;assert institucion.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       mx.com.amiba.foliosaaa.Institucion : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert institucion.save() != null
+       |           |      |
+       |           null   false
+       mx.com.amiba.foliosaaa.Institucion : (unsaved)
+
+	at foliosaaa.InstitucionControllerTests.testUpdate(InstitucionControllerTests.groovy:104)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.InstitucionControllerTests" name="testDelete" time="0.082">
+          <failure message="Assertion failed: &#xa;&#xa;assert institucion.save() != null&#xa;       |           |      |&#xa;       |           null   false&#xa;       mx.com.amiba.foliosaaa.Institucion : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert institucion.save() != null
+       |           |      |
+       |           null   false
+       mx.com.amiba.foliosaaa.Institucion : (unsaved)
+
+	at foliosaaa.InstitucionControllerTests.testDelete(InstitucionControllerTests.groovy:148)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="5" hostname="Mac-Pro-de-Alfredo.local" id="2" name="SubFolioControllerTests" package="foliosaaa" tests="8" time="0.727" timestamp="2013-10-01T00:26:27">
+      <properties />
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testIndex" time="0.203" />
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testList" time="0.058" />
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testCreate" time="0.076" />
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testSave" time="0.072">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/subFolio/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2e21712e&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/subFolio/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2e21712e
+
+	at foliosaaa.SubFolioControllerTests.testSave(SubFolioControllerTests.groovy:52)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testShow" time="0.071">
+          <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testShow(SubFolioControllerTests.groovy:66)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testEdit" time="0.071">
+          <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testEdit(SubFolioControllerTests.groovy:84)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testUpdate" time="0.081">
+          <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testUpdate(SubFolioControllerTests.groovy:104)
+</failure>
+
+      </testcase>
+
+      <testcase classname="foliosaaa.SubFolioControllerTests" name="testDelete" time="0.071">
+          <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testDelete(SubFolioControllerTests.groovy:148)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

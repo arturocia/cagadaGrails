@@ -1,4 +1,4 @@
-<%@ page import="foliosaaa.Folio" %>
+<%@ page import="mx.com.amiba.foliosaaa.Folio" %>
 
 
 
@@ -18,12 +18,12 @@
 	<g:field name="numero" type="number" value="${folioInstance.numero}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: folioInstance, field: 'cagada', 'error')} required">
-	<label for="cagada">
-		<g:message code="folio.cagada.label" default="Cagada" />
+<div class="fieldcontain ${hasErrors(bean: folioInstance, field: 'archivo', 'error')} required">
+	<label for="archivo">
+		<g:message code="folio.archivo.label" default="Archivo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<input type="file" id="cagada" name="cagada" />
+	<input type="file" id="caca" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: folioInstance, field: 'institucion', 'error')} required">
@@ -31,14 +31,6 @@
 		<g:message code="folio.institucion.label" default="Institucion" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="institucion" name="institucion.id" from="${foliosaaa.Institucion.list()}" optionKey="id" required="" value="${folioInstance?.institucion?.id}" class="many-to-one"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: folioInstance, field: 'pdf', 'error')} required">
-	<label for="pdf">
-		<g:message code="folio.pdf.label" default="Pdf" />
-		<span class="required-indicator">*</span>
-	</label>
-	
+	<g:select id="institucion" name="institucion.id" from="${mx.com.amiba.foliosaaa.Institucion.list()}" optionKey="id" required="" value="${folioInstance?.institucion?.id}" class="many-to-one"/>
 </div>
 

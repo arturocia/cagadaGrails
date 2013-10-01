@@ -1,5 +1,5 @@
 
-<%@ page import="foliosaaa.Folio" %>
+<%@ page import="mx.com.amiba.foliosaaa.Folio" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -41,9 +41,9 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${folioInstance?.cagada}">
+				<g:if test="${folioInstance?.archivo}">
 				<li class="fieldcontain">
-					<span id="cagada-label" class="property-label"><g:message code="folio.cagada.label" default="Cagada" /></span>
+					<span id="archivo-label" class="property-label"><g:message code="folio.archivo.label" default="Archivo" /></span>
 					
 				</li>
 				</g:if>
@@ -53,15 +53,6 @@
 					<span id="institucion-label" class="property-label"><g:message code="folio.institucion.label" default="Institucion" /></span>
 					
 						<span class="property-value" aria-labelledby="institucion-label"><g:link controller="institucion" action="show" id="${folioInstance?.institucion?.id}">${folioInstance?.institucion?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${folioInstance?.pdf}">
-				<li class="fieldcontain">
-					<span id="pdf-label" class="property-label"><g:message code="folio.pdf.label" default="Pdf" /></span>
-					
-						<span class="property-value" aria-labelledby="pdf-label"><g:fieldValue bean="${folioInstance}" field="pdf"/></span>
 					
 				</li>
 				</g:if>

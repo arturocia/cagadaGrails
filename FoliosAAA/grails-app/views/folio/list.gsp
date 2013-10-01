@@ -1,5 +1,5 @@
 
-<%@ page import="foliosaaa.Folio" %>
+<%@ page import="mx.com.amiba.foliosaaa.Folio" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -28,11 +28,9 @@
 					
 						<g:sortableColumn property="numero" title="${message(code: 'folio.numero.label', default: 'Numero')}" />
 					
-						<g:sortableColumn property="cagada" title="${message(code: 'folio.cagada.label', default: 'Cagada')}" />
+						<g:sortableColumn property="archivo" title="${message(code: 'folio.archivo.label', default: 'Archivo')}" />
 					
 						<th><g:message code="folio.institucion.label" default="Institucion" /></th>
-					
-						<g:sortableColumn property="pdf" title="${message(code: 'folio.pdf.label', default: 'Pdf')}" />
 					
 					</tr>
 				</thead>
@@ -44,11 +42,9 @@
 					
 						<td>${fieldValue(bean: folioInstance, field: "numero")}</td>
 					
-						<td>${fieldValue(bean: folioInstance, field: "cagada")}</td>
+						<td>${fieldValue(bean: folioInstance, field: "archivo")}</td>
 					
 						<td>${fieldValue(bean: folioInstance, field: "institucion")}</td>
-					
-						<td>${fieldValue(bean: folioInstance, field: "pdf")}</td>
 					
 					</tr>
 				</g:each>

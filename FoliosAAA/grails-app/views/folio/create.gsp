@@ -1,4 +1,4 @@
-<%@ page import="foliosaaa.Folio" %>
+<%@ page import="mx.com.amiba.foliosaaa.Folio" %>
 <!DOCTYPE html>
 <html>
 	<head>

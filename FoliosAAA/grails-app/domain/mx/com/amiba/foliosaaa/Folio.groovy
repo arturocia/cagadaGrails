@@ -7,7 +7,6 @@ class Folio {
 
 	Date fecha
 	Integer numero
-	File pdf
 	Byte [] cagada
 	
     static constraints = {

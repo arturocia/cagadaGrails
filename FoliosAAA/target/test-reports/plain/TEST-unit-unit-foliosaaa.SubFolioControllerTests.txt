@@ -1,0 +1,116 @@
+Testsuite: foliosaaa.SubFolioControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 0,727 sec
+------------- Standard Output ---------------
+--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+
+Testcase: testIndex took 0,203 sec
+Testcase: testList took 0,058 sec
+Testcase: testCreate took 0,076 sec
+Testcase: testSave took 0,072 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/subFolio/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2e21712e
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/subFolio/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2e21712e
+
+	at foliosaaa.SubFolioControllerTests.testSave(SubFolioControllerTests.groovy:52)
+
+Testcase: testShow took 0,071 sec
+	FAILED
+Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testShow(SubFolioControllerTests.groovy:66)
+
+Testcase: testEdit took 0,07 sec
+	FAILED
+Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testEdit(SubFolioControllerTests.groovy:84)
+
+Testcase: testUpdate took 0,08 sec
+	FAILED
+Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testUpdate(SubFolioControllerTests.groovy:104)
+
+Testcase: testDelete took 0,071 sec
+	FAILED
+Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testDelete(SubFolioControllerTests.groovy:148)
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="Mac-Pro-de-Alfredo.local" name="foliosaaa.SubFolioControllerTests" tests="8" time="0.727" timestamp="2013-10-01T00:26:27">
+  <properties />
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testIndex" time="0.203" />
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testList" time="0.058" />
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testCreate" time="0.076" />
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testSave" time="0.072">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/subFolio/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2e21712e&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/subFolio/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2e21712e
+
+	at foliosaaa.SubFolioControllerTests.testSave(SubFolioControllerTests.groovy:52)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testShow" time="0.071">
+    <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testShow(SubFolioControllerTests.groovy:66)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testEdit" time="0.071">
+    <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testEdit(SubFolioControllerTests.groovy:84)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testUpdate" time="0.081">
+    <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testUpdate(SubFolioControllerTests.groovy:104)
+</failure>
+  </testcase>
+  <testcase classname="foliosaaa.SubFolioControllerTests" name="testDelete" time="0.071">
+    <failure message="Assertion failed: &#xa;&#xa;assert subFolio.save() != null&#xa;       |        |      |&#xa;       |        null   false&#xa;       mx.com.amiba.foliosaaa.SubFolio : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert subFolio.save() != null
+       |        |      |
+       |        null   false
+       mx.com.amiba.foliosaaa.SubFolio : (unsaved)
+
+	at foliosaaa.SubFolioControllerTests.testDelete(SubFolioControllerTests.groovy:148)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+  <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+</testsuite>

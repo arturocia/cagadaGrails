@@ -1,0 +1,27 @@
+
+alter table t306_t_telefonosolicitante add index fk_301_306 (id_301_solicitante), add constraint fk_301_306 foreign key (id_301_solicitante) references t301_t_solicitante (id);
+alter table t306_t_telefonosolicitante add index fk_307_306 (id_307_tipotelefono), add constraint fk_307_306 foreign key (id_307_tipotelefono) references t307_c_tipotelefono (id);
+alter table t401_t_solicitud add index fk_301_401 (id_301_solicitante), add constraint fk_301_401 foreign key (id_301_solicitante) references t301_t_solicitante (id);
+alter table t402_t_docanexo add index fk_401_402 (id_401_solicitud), add constraint fk_401_402 foreign key (id_401_solicitud) references t401_t_solicitud (id);
+alter table t402_t_docanexo add index fk_405_402 (id_405_tipodoc), add constraint fk_405_402 foreign key (id_405_tipodoc) references t405_c_tipodoc (id);
+alter table t303_t_puesto add index fk_301_303 (id_301_solicitante), add constraint fk_301_303 foreign key (id_301_solicitante) references t301_t_solicitante (id);
+alter table t401_t_solicitud add index fk_406_401 (id_406_tiposervicio), add constraint fk_406_401 foreign key (id_406_tiposervicio) references t406_c_tiposervicio (id);
+alter table t401_t_solicitud add index fk_407_401 (id_407_formapago), add constraint fk_407_401 foreign key (id_407_formapago) references t407_c_formapago (id);
+alter table t301_t_solicitante add index fk_304_301 (id_304_nacionalidad), add constraint fk_304_301 foreign key (id_304_nacionalidad) references t304_c_nacionalidad (id);
+alter table t301_t_solicitante add index fk_305_301 (id_305_nivelestudios), add constraint fk_305_301 foreign key (id_305_nivelestudios) references t305_c_nivelestudios (id);
+alter table t401_t_solicitud add index fk_408_401 (id_408_figura), add constraint fk_408_401 foreign key (id_408_figura) references t408_c_figura (id);
+alter table t401_t_solicitud add index fk_409_401 (id_409_tipoexamen), add constraint fk_409_401 foreign key (id_409_tipoexamen) references t409_c_tipoexamen (id);
+alter table t401_t_solicitud add index fk_410_401 (id_410_modalcapacitacion), add constraint fk_410_401 foreign key (id_410_modalcapacitacion) references t410_c_modalcapacitacion (id);
+alter table t401_t_solicitud add index fk_411_401 (id_411_horarioexamen), add constraint fk_411_401 foreign key (id_411_horarioexamen) references t411_c_horarioexamen (id);
+alter table t401_t_solicitud add index fk_412_401 (id_412_modalactcert), add constraint fk_412_401 foreign key (id_412_modalactcert) references t412_c_modalactcert (id);
+alter table t401_t_solicitud add index fk_413_401 (id_413_institutocapacitador), add constraint fk_413_401 foreign key (id_413_institutocapacitador) references t413_c_institutocapacitador (id);
+alter table t401_t_solicitud add index fk_404_401 (id_404_statussolicitud), add constraint fk_404_401 foreign key (id_404_statussolicitud) references t404_c_statussolicitud (id);
+alter table t101_t_usuario add index fk_101_301 (id_301_solicitante), add constraint fk_101_301 foreign key (id_301_solicitante) references t301_t_solicitante (id);
+alter table t202_c_municipio add index fk_201_202 (id_201_entidadfed), add constraint fk_201_202 foreign key (id_201_entidadfed) references t201_c_entidadfed (id);
+alter table t203_c_asentamiento add index fk_202_203 (id_202_municipio), add constraint fk_202_203 foreign key (id_202_municipio) references t202_c_municipio (id);
+alter table t204_c_ciudad add index fk_202_204 (id_202_municipio), add constraint fk_202_204 foreign key (id_202_municipio) references t202_c_municipio (id);
+alter table t205_c_sepomex add index fk_203_205 (id_203_asentamiento), add constraint fk_203_205 foreign key (id_203_asentamiento) references t203_c_asentamiento (id);
+alter table t205_c_sepomex add index fk_204_205 (id_204_ciudad), add constraint fk_204_205 foreign key (id_204_ciudad) references t204_c_ciudad (id);
+alter table t302_t_archivofoto add index fk_301_302 (id_301_solicitante), add constraint fk_301_302 foreign key (id_301_solicitante) references t301_t_solicitante (id);
+alter table t403_t_archivodocanexo add index fk_403_402 (id_402_docanexo), add constraint fk_403_402 foreign key (id_402_docanexo) references t402_t_docanexo (id);
+alter table t301_t_solicitante add index fk_205_301 (id_205_sepomex), add constraint fk_205_301 foreign key (id_205_sepomex) references t205_c_sepomex (id);

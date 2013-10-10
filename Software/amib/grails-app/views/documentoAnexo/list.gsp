@@ -1,0 +1,50 @@
+
+<%@ page import="mx.amib.sistemas.solicitud.DocumentoAnexo" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="layout" content="main">
+		<g:set var="entityName" value="${message(code: 'documentoAnexo.label', default: 'DocumentoAnexo')}" />
+		<title><g:message code="default.list.label" args="[entityName]" /></title>
+	</head>
+	<body>
+		<a href="#list-documentoAnexo" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+			</ul>
+		</div>
+		<div id="list-documentoAnexo" class="content scaffold-list" role="main">
+			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+			<g:if test="${flash.message}">
+			<div class="message" role="status">${flash.message}</div>
+			</g:if>
+			<table>
+				<thead>
+					<tr>
+					
+						<th><g:message code="documentoAnexo.t401TSolicitud.label" default="T401 TS olicitud" /></th>
+					
+						<th><g:message code="documentoAnexo.t405CTipodoc.label" default="T405 CT ipodoc" /></th>
+					
+					</tr>
+				</thead>
+				<tbody>
+				<g:each in="${documentoAnexoInstanceList}" status="i" var="documentoAnexoInstance">
+					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${documentoAnexoInstance.id}">${fieldValue(bean: documentoAnexoInstance, field: "t401TSolicitud")}</g:link></td>
+					
+						<td>${fieldValue(bean: documentoAnexoInstance, field: "t405CTipodoc")}</td>
+					
+					</tr>
+				</g:each>
+				</tbody>
+			</table>
+			<div class="pagination">
+				<g:paginate total="${documentoAnexoInstanceTotal}" />
+			</div>
+		</div>
+	</body>
+</html>

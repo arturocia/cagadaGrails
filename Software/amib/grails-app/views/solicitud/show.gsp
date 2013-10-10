@@ -23,211 +23,211 @@
 			</g:if>
 			<ol class="property-list solicitud">
 			
-				<g:if test="${solicitudInstance?.nuFolioacredetica}">
+				<g:if test="${solicitudInstance?.folioAcreditacionEtica}">
 				<li class="fieldcontain">
-					<span id="nuFolioacredetica-label" class="property-label"><g:message code="solicitud.nuFolioacredetica.label" default="Nu Folioacredetica" /></span>
+					<span id="folioAcreditacionEtica-label" class="property-label"><g:message code="solicitud.folioAcreditacionEtica.label" default="Folio Acreditacion Etica" /></span>
 					
-						<span class="property-value" aria-labelledby="nuFolioacredetica-label"><g:fieldValue bean="${solicitudInstance}" field="nuFolioacredetica"/></span>
+						<span class="property-value" aria-labelledby="folioAcreditacionEtica-label"><g:fieldValue bean="${solicitudInstance}" field="folioAcreditacionEtica"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.nuMatriculaamib}">
+				<g:if test="${solicitudInstance?.matriculaAmib}">
 				<li class="fieldcontain">
-					<span id="nuMatriculaamib-label" class="property-label"><g:message code="solicitud.nuMatriculaamib.label" default="Nu Matriculaamib" /></span>
+					<span id="matriculaAmib-label" class="property-label"><g:message code="solicitud.matriculaAmib.label" default="Matricula Amib" /></span>
 					
-						<span class="property-value" aria-labelledby="nuMatriculaamib-label"><g:fieldValue bean="${solicitudInstance}" field="nuMatriculaamib"/></span>
+						<span class="property-value" aria-labelledby="matriculaAmib-label"><g:fieldValue bean="${solicitudInstance}" field="matriculaAmib"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.nuFolioautorizacion}">
+				<g:if test="${solicitudInstance?.folioAutorizacion}">
 				<li class="fieldcontain">
-					<span id="nuFolioautorizacion-label" class="property-label"><g:message code="solicitud.nuFolioautorizacion.label" default="Nu Folioautorizacion" /></span>
+					<span id="folioAutorizacion-label" class="property-label"><g:message code="solicitud.folioAutorizacion.label" default="Folio Autorizacion" /></span>
 					
-						<span class="property-value" aria-labelledby="nuFolioautorizacion-label"><g:fieldValue bean="${solicitudInstance}" field="nuFolioautorizacion"/></span>
+						<span class="property-value" aria-labelledby="folioAutorizacion-label"><g:fieldValue bean="${solicitudInstance}" field="folioAutorizacion"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.txModactcerti}">
+				<g:if test="${solicitudInstance?.valorModalidadActualizacionCertificacion}">
 				<li class="fieldcontain">
-					<span id="txModactcerti-label" class="property-label"><g:message code="solicitud.txModactcerti.label" default="Tx Modactcerti" /></span>
+					<span id="valorModalidadActualizacionCertificacion-label" class="property-label"><g:message code="solicitud.valorModalidadActualizacionCertificacion.label" default="Valor Modalidad Actualizacion Certificacion" /></span>
 					
-						<span class="property-value" aria-labelledby="txModactcerti-label"><g:fieldValue bean="${solicitudInstance}" field="txModactcerti"/></span>
+						<span class="property-value" aria-labelledby="valorModalidadActualizacionCertificacion-label"><g:fieldValue bean="${solicitudInstance}" field="valorModalidadActualizacionCertificacion"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.txOtroinstcapac}">
+				<g:if test="${solicitudInstance?.otroInstitutoCapacitador}">
 				<li class="fieldcontain">
-					<span id="txOtroinstcapac-label" class="property-label"><g:message code="solicitud.txOtroinstcapac.label" default="Tx Otroinstcapac" /></span>
+					<span id="otroInstitutoCapacitador-label" class="property-label"><g:message code="solicitud.otroInstitutoCapacitador.label" default="Otro Instituto Capacitador" /></span>
 					
-						<span class="property-value" aria-labelledby="txOtroinstcapac-label"><g:fieldValue bean="${solicitudInstance}" field="txOtroinstcapac"/></span>
+						<span class="property-value" aria-labelledby="otroInstitutoCapacitador-label"><g:fieldValue bean="${solicitudInstance}" field="otroInstitutoCapacitador"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.nmDiInstitucion}">
+				<g:if test="${solicitudInstance?.datoIntermediarioInstitucion}">
 				<li class="fieldcontain">
-					<span id="nmDiInstitucion-label" class="property-label"><g:message code="solicitud.nmDiInstitucion.label" default="Nm Di Institucion" /></span>
+					<span id="datoIntermediarioInstitucion-label" class="property-label"><g:message code="solicitud.datoIntermediarioInstitucion.label" default="Dato Intermediario Institucion" /></span>
 					
-						<span class="property-value" aria-labelledby="nmDiInstitucion-label"><g:fieldValue bean="${solicitudInstance}" field="nmDiInstitucion"/></span>
+						<span class="property-value" aria-labelledby="datoIntermediarioInstitucion-label"><g:fieldValue bean="${solicitudInstance}" field="datoIntermediarioInstitucion"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.txDiPuesto}">
+				<g:if test="${solicitudInstance?.datoIntermediarioPuesto}">
 				<li class="fieldcontain">
-					<span id="txDiPuesto-label" class="property-label"><g:message code="solicitud.txDiPuesto.label" default="Tx Di Puesto" /></span>
+					<span id="datoIntermediarioPuesto-label" class="property-label"><g:message code="solicitud.datoIntermediarioPuesto.label" default="Dato Intermediario Puesto" /></span>
 					
-						<span class="property-value" aria-labelledby="txDiPuesto-label"><g:fieldValue bean="${solicitudInstance}" field="txDiPuesto"/></span>
+						<span class="property-value" aria-labelledby="datoIntermediarioPuesto-label"><g:fieldValue bean="${solicitudInstance}" field="datoIntermediarioPuesto"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.fhDiIniciolaborles}">
+				<g:if test="${solicitudInstance?.datoIntermediarioFechaInicioLabores}">
 				<li class="fieldcontain">
-					<span id="fhDiIniciolaborles-label" class="property-label"><g:message code="solicitud.fhDiIniciolaborles.label" default="Fh Di Iniciolaborles" /></span>
+					<span id="datoIntermediarioFechaInicioLabores-label" class="property-label"><g:message code="solicitud.datoIntermediarioFechaInicioLabores.label" default="Dato Intermediario Fecha Inicio Labores" /></span>
 					
-						<span class="property-value" aria-labelledby="fhDiIniciolaborles-label"><g:formatDate date="${solicitudInstance?.fhDiIniciolaborles}" /></span>
+						<span class="property-value" aria-labelledby="datoIntermediarioFechaInicioLabores-label"><g:formatDate date="${solicitudInstance?.datoIntermediarioFechaInicioLabores}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.fhDiConsulrepcredesp}">
+				<g:if test="${solicitudInstance?.datoIntermediarioFechaConsultaReporteCE}">
 				<li class="fieldcontain">
-					<span id="fhDiConsulrepcredesp-label" class="property-label"><g:message code="solicitud.fhDiConsulrepcredesp.label" default="Fh Di Consulrepcredesp" /></span>
+					<span id="datoIntermediarioFechaConsultaReporteCE-label" class="property-label"><g:message code="solicitud.datoIntermediarioFechaConsultaReporteCE.label" default="Dato Intermediario Fecha Consulta Reporte CE" /></span>
 					
-						<span class="property-value" aria-labelledby="fhDiConsulrepcredesp-label"><g:formatDate date="${solicitudInstance?.fhDiConsulrepcredesp}" /></span>
+						<span class="property-value" aria-labelledby="datoIntermediarioFechaConsultaReporteCE-label"><g:formatDate date="${solicitudInstance?.datoIntermediarioFechaConsultaReporteCE}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.nmDfRazonsocial}">
+				<g:if test="${solicitudInstance?.datoFactuacionRazonSocial}">
 				<li class="fieldcontain">
-					<span id="nmDfRazonsocial-label" class="property-label"><g:message code="solicitud.nmDfRazonsocial.label" default="Nm Df Razonsocial" /></span>
+					<span id="datoFactuacionRazonSocial-label" class="property-label"><g:message code="solicitud.datoFactuacionRazonSocial.label" default="Dato Factuacion Razon Social" /></span>
 					
-						<span class="property-value" aria-labelledby="nmDfRazonsocial-label"><g:fieldValue bean="${solicitudInstance}" field="nmDfRazonsocial"/></span>
+						<span class="property-value" aria-labelledby="datoFactuacionRazonSocial-label"><g:fieldValue bean="${solicitudInstance}" field="datoFactuacionRazonSocial"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.txDfCorreofactura}">
+				<g:if test="${solicitudInstance?.datoFacturacionCorreoEFactura}">
 				<li class="fieldcontain">
-					<span id="txDfCorreofactura-label" class="property-label"><g:message code="solicitud.txDfCorreofactura.label" default="Tx Df Correofactura" /></span>
+					<span id="datoFacturacionCorreoEFactura-label" class="property-label"><g:message code="solicitud.datoFacturacionCorreoEFactura.label" default="Dato Facturacion Correo EF actura" /></span>
 					
-						<span class="property-value" aria-labelledby="txDfCorreofactura-label"><g:fieldValue bean="${solicitudInstance}" field="txDfCorreofactura"/></span>
+						<span class="property-value" aria-labelledby="datoFacturacionCorreoEFactura-label"><g:fieldValue bean="${solicitudInstance}" field="datoFacturacionCorreoEFactura"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.fhSolicitud}">
+				<g:if test="${solicitudInstance?.documentosAnexos}">
 				<li class="fieldcontain">
-					<span id="fhSolicitud-label" class="property-label"><g:message code="solicitud.fhSolicitud.label" default="Fh Solicitud" /></span>
+					<span id="documentosAnexos-label" class="property-label"><g:message code="solicitud.documentosAnexos.label" default="Documentos Anexos" /></span>
 					
-						<span class="property-value" aria-labelledby="fhSolicitud-label"><g:formatDate date="${solicitudInstance?.fhSolicitud}" /></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${solicitudInstance?.t301TSolicitante}">
-				<li class="fieldcontain">
-					<span id="t301TSolicitante-label" class="property-label"><g:message code="solicitud.t301TSolicitante.label" default="T301 TS olicitante" /></span>
-					
-						<span class="property-value" aria-labelledby="t301TSolicitante-label"><g:link controller="solicitante" action="show" id="${solicitudInstance?.t301TSolicitante?.id}">${solicitudInstance?.t301TSolicitante?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${solicitudInstance?.t402TDocanexos}">
-				<li class="fieldcontain">
-					<span id="t402TDocanexos-label" class="property-label"><g:message code="solicitud.t402TDocanexos.label" default="T402 TD ocanexos" /></span>
-					
-						<g:each in="${solicitudInstance.t402TDocanexos}" var="t">
-						<span class="property-value" aria-labelledby="t402TDocanexos-label"><g:link controller="documentoAnexo" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						<g:each in="${solicitudInstance.documentosAnexos}" var="d">
+						<span class="property-value" aria-labelledby="documentosAnexos-label"><g:link controller="documentoAnexo" action="show" id="${d.id}">${d?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t404CStatussolicitud}">
+				<g:if test="${solicitudInstance?.fechaSolicitud}">
 				<li class="fieldcontain">
-					<span id="t404CStatussolicitud-label" class="property-label"><g:message code="solicitud.t404CStatussolicitud.label" default="T404 CS tatussolicitud" /></span>
+					<span id="fechaSolicitud-label" class="property-label"><g:message code="solicitud.fechaSolicitud.label" default="Fecha Solicitud" /></span>
 					
-						<span class="property-value" aria-labelledby="t404CStatussolicitud-label"><g:link controller="statusSolicitud" action="show" id="${solicitudInstance?.t404CStatussolicitud?.id}">${solicitudInstance?.t404CStatussolicitud?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="fechaSolicitud-label"><g:formatDate date="${solicitudInstance?.fechaSolicitud}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t406CTiposervicio}">
+				<g:if test="${solicitudInstance?.figura}">
 				<li class="fieldcontain">
-					<span id="t406CTiposervicio-label" class="property-label"><g:message code="solicitud.t406CTiposervicio.label" default="T406 CT iposervicio" /></span>
+					<span id="figura-label" class="property-label"><g:message code="solicitud.figura.label" default="Figura" /></span>
 					
-						<span class="property-value" aria-labelledby="t406CTiposervicio-label"><g:link controller="tipoServicio" action="show" id="${solicitudInstance?.t406CTiposervicio?.id}">${solicitudInstance?.t406CTiposervicio?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="figura-label"><g:link controller="figura" action="show" id="${solicitudInstance?.figura?.id}">${solicitudInstance?.figura?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t407CFormapago}">
+				<g:if test="${solicitudInstance?.formaPago}">
 				<li class="fieldcontain">
-					<span id="t407CFormapago-label" class="property-label"><g:message code="solicitud.t407CFormapago.label" default="T407 CF ormapago" /></span>
+					<span id="formaPago-label" class="property-label"><g:message code="solicitud.formaPago.label" default="Forma Pago" /></span>
 					
-						<span class="property-value" aria-labelledby="t407CFormapago-label"><g:link controller="formaPago" action="show" id="${solicitudInstance?.t407CFormapago?.id}">${solicitudInstance?.t407CFormapago?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="formaPago-label"><g:link controller="formaPago" action="show" id="${solicitudInstance?.formaPago?.id}">${solicitudInstance?.formaPago?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t408CFigura}">
+				<g:if test="${solicitudInstance?.horarioExamen}">
 				<li class="fieldcontain">
-					<span id="t408CFigura-label" class="property-label"><g:message code="solicitud.t408CFigura.label" default="T408 CF igura" /></span>
+					<span id="horarioExamen-label" class="property-label"><g:message code="solicitud.horarioExamen.label" default="Horario Examen" /></span>
 					
-						<span class="property-value" aria-labelledby="t408CFigura-label"><g:link controller="figura" action="show" id="${solicitudInstance?.t408CFigura?.id}">${solicitudInstance?.t408CFigura?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="horarioExamen-label"><g:link controller="horarioExamen" action="show" id="${solicitudInstance?.horarioExamen?.id}">${solicitudInstance?.horarioExamen?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t409CTipoexamen}">
+				<g:if test="${solicitudInstance?.institutoCapacitador}">
 				<li class="fieldcontain">
-					<span id="t409CTipoexamen-label" class="property-label"><g:message code="solicitud.t409CTipoexamen.label" default="T409 CT ipoexamen" /></span>
+					<span id="institutoCapacitador-label" class="property-label"><g:message code="solicitud.institutoCapacitador.label" default="Instituto Capacitador" /></span>
 					
-						<span class="property-value" aria-labelledby="t409CTipoexamen-label"><g:link controller="tipoExamen" action="show" id="${solicitudInstance?.t409CTipoexamen?.id}">${solicitudInstance?.t409CTipoexamen?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="institutoCapacitador-label"><g:link controller="institutoCapacitador" action="show" id="${solicitudInstance?.institutoCapacitador?.id}">${solicitudInstance?.institutoCapacitador?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t410CModalcapacitacion}">
+				<g:if test="${solicitudInstance?.modalidadActCertificacion}">
 				<li class="fieldcontain">
-					<span id="t410CModalcapacitacion-label" class="property-label"><g:message code="solicitud.t410CModalcapacitacion.label" default="T410 CM odalcapacitacion" /></span>
+					<span id="modalidadActCertificacion-label" class="property-label"><g:message code="solicitud.modalidadActCertificacion.label" default="Modalidad Act Certificacion" /></span>
 					
-						<span class="property-value" aria-labelledby="t410CModalcapacitacion-label"><g:link controller="modalidadCapacitacion" action="show" id="${solicitudInstance?.t410CModalcapacitacion?.id}">${solicitudInstance?.t410CModalcapacitacion?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="modalidadActCertificacion-label"><g:link controller="modalidadCertificacion" action="show" id="${solicitudInstance?.modalidadActCertificacion?.id}">${solicitudInstance?.modalidadActCertificacion?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t411CHorarioexamen}">
+				<g:if test="${solicitudInstance?.modalidadCapacitacion}">
 				<li class="fieldcontain">
-					<span id="t411CHorarioexamen-label" class="property-label"><g:message code="solicitud.t411CHorarioexamen.label" default="T411 CH orarioexamen" /></span>
+					<span id="modalidadCapacitacion-label" class="property-label"><g:message code="solicitud.modalidadCapacitacion.label" default="Modalidad Capacitacion" /></span>
 					
-						<span class="property-value" aria-labelledby="t411CHorarioexamen-label"><g:link controller="horarioExamen" action="show" id="${solicitudInstance?.t411CHorarioexamen?.id}">${solicitudInstance?.t411CHorarioexamen?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="modalidadCapacitacion-label"><g:link controller="modalidadCapacitacion" action="show" id="${solicitudInstance?.modalidadCapacitacion?.id}">${solicitudInstance?.modalidadCapacitacion?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t412CModalactcert}">
+				<g:if test="${solicitudInstance?.solicitante}">
 				<li class="fieldcontain">
-					<span id="t412CModalactcert-label" class="property-label"><g:message code="solicitud.t412CModalactcert.label" default="T412 CM odalactcert" /></span>
+					<span id="solicitante-label" class="property-label"><g:message code="solicitud.solicitante.label" default="Solicitante" /></span>
 					
-						<span class="property-value" aria-labelledby="t412CModalactcert-label"><g:link controller="modalidadCertificacion" action="show" id="${solicitudInstance?.t412CModalactcert?.id}">${solicitudInstance?.t412CModalactcert?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="solicitante-label"><g:link controller="solicitante" action="show" id="${solicitudInstance?.solicitante?.id}">${solicitudInstance?.solicitante?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${solicitudInstance?.t413CInstitutocapacitador}">
+				<g:if test="${solicitudInstance?.statusSolicitud}">
 				<li class="fieldcontain">
-					<span id="t413CInstitutocapacitador-label" class="property-label"><g:message code="solicitud.t413CInstitutocapacitador.label" default="T413 CI nstitutocapacitador" /></span>
+					<span id="statusSolicitud-label" class="property-label"><g:message code="solicitud.statusSolicitud.label" default="Status Solicitud" /></span>
 					
-						<span class="property-value" aria-labelledby="t413CInstitutocapacitador-label"><g:link controller="institutoCapacitador" action="show" id="${solicitudInstance?.t413CInstitutocapacitador?.id}">${solicitudInstance?.t413CInstitutocapacitador?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="statusSolicitud-label"><g:link controller="statusSolicitud" action="show" id="${solicitudInstance?.statusSolicitud?.id}">${solicitudInstance?.statusSolicitud?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${solicitudInstance?.tipoExamen}">
+				<li class="fieldcontain">
+					<span id="tipoExamen-label" class="property-label"><g:message code="solicitud.tipoExamen.label" default="Tipo Examen" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoExamen-label"><g:link controller="tipoExamen" action="show" id="${solicitudInstance?.tipoExamen?.id}">${solicitudInstance?.tipoExamen?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${solicitudInstance?.tipoServicio}">
+				<li class="fieldcontain">
+					<span id="tipoServicio-label" class="property-label"><g:message code="solicitud.tipoServicio.label" default="Tipo Servicio" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoServicio-label"><g:link controller="tipoServicio" action="show" id="${solicitudInstance?.tipoServicio?.id}">${solicitudInstance?.tipoServicio?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

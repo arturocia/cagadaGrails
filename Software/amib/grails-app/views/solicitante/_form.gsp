@@ -194,6 +194,6 @@
 		<g:message code="solicitante.usuario.label" default="Usuario" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="usuario" name="usuario.id" from="${ms.amib.sistemas.membership.Usuario.list()}" optionKey="id" required="" value="${solicitanteInstance?.usuario?.id}" class="many-to-one"/>
+	<g:select id="usuario" name="usuario.id" from="${mx.amib.sistemas.membership.Usuario.list()}" optionKey="id" required="" value="${solicitanteInstance?.usuario?.id}" class="many-to-one"/>
 </div>
 

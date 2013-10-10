@@ -23,27 +23,27 @@
 			</g:if>
 			<ol class="property-list archivoDocumentoAnexo">
 			
-				<g:if test="${archivoDocumentoAnexoInstance?.txTipo}">
+				<g:if test="${archivoDocumentoAnexoInstance?.tipo}">
 				<li class="fieldcontain">
-					<span id="txTipo-label" class="property-label"><g:message code="archivoDocumentoAnexo.txTipo.label" default="Tx Tipo" /></span>
+					<span id="tipo-label" class="property-label"><g:message code="archivoDocumentoAnexo.tipo.label" default="Tipo" /></span>
 					
-						<span class="property-value" aria-labelledby="txTipo-label"><g:fieldValue bean="${archivoDocumentoAnexoInstance}" field="txTipo"/></span>
+						<span class="property-value" aria-labelledby="tipo-label"><g:fieldValue bean="${archivoDocumentoAnexoInstance}" field="tipo"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${archivoDocumentoAnexoInstance?.blDocanexo}">
+				<g:if test="${archivoDocumentoAnexoInstance?.archivo}">
 				<li class="fieldcontain">
-					<span id="blDocanexo-label" class="property-label"><g:message code="archivoDocumentoAnexo.blDocanexo.label" default="Bl Docanexo" /></span>
+					<span id="archivo-label" class="property-label"><g:message code="archivoDocumentoAnexo.archivo.label" default="Archivo" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${archivoDocumentoAnexoInstance?.t402TDocanexo}">
+				<g:if test="${archivoDocumentoAnexoInstance?.documentoAnexo}">
 				<li class="fieldcontain">
-					<span id="t402TDocanexo-label" class="property-label"><g:message code="archivoDocumentoAnexo.t402TDocanexo.label" default="T402 TD ocanexo" /></span>
+					<span id="documentoAnexo-label" class="property-label"><g:message code="archivoDocumentoAnexo.documentoAnexo.label" default="Documento Anexo" /></span>
 					
-						<span class="property-value" aria-labelledby="t402TDocanexo-label"><g:link controller="documentoAnexo" action="show" id="${archivoDocumentoAnexoInstance?.t402TDocanexo?.id}">${archivoDocumentoAnexoInstance?.t402TDocanexo?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="documentoAnexo-label"><g:link controller="documentoAnexo" action="show" id="${archivoDocumentoAnexoInstance?.documentoAnexo?.id}">${archivoDocumentoAnexoInstance?.documentoAnexo?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -23,31 +23,31 @@
 			</g:if>
 			<ol class="property-list documentoAnexo">
 			
-				<g:if test="${documentoAnexoInstance?.t401TSolicitud}">
+				<g:if test="${documentoAnexoInstance?.archivoDocumentoAnexo}">
 				<li class="fieldcontain">
-					<span id="t401TSolicitud-label" class="property-label"><g:message code="documentoAnexo.t401TSolicitud.label" default="T401 TS olicitud" /></span>
+					<span id="archivoDocumentoAnexo-label" class="property-label"><g:message code="documentoAnexo.archivoDocumentoAnexo.label" default="Archivo Documento Anexo" /></span>
 					
-						<span class="property-value" aria-labelledby="t401TSolicitud-label"><g:link controller="solicitud" action="show" id="${documentoAnexoInstance?.t401TSolicitud?.id}">${documentoAnexoInstance?.t401TSolicitud?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${documentoAnexoInstance?.t403TArchivodocanexos}">
-				<li class="fieldcontain">
-					<span id="t403TArchivodocanexos-label" class="property-label"><g:message code="documentoAnexo.t403TArchivodocanexos.label" default="T403 TA rchivodocanexos" /></span>
-					
-						<g:each in="${documentoAnexoInstance.t403TArchivodocanexos}" var="t">
-						<span class="property-value" aria-labelledby="t403TArchivodocanexos-label"><g:link controller="archivoDocumentoAnexo" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						<g:each in="${documentoAnexoInstance.archivoDocumentoAnexo}" var="a">
+						<span class="property-value" aria-labelledby="archivoDocumentoAnexo-label"><g:link controller="archivoDocumentoAnexo" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${documentoAnexoInstance?.t405CTipodoc}">
+				<g:if test="${documentoAnexoInstance?.solicitud}">
 				<li class="fieldcontain">
-					<span id="t405CTipodoc-label" class="property-label"><g:message code="documentoAnexo.t405CTipodoc.label" default="T405 CT ipodoc" /></span>
+					<span id="solicitud-label" class="property-label"><g:message code="documentoAnexo.solicitud.label" default="Solicitud" /></span>
 					
-						<span class="property-value" aria-labelledby="t405CTipodoc-label"><g:link controller="tipoDocumento" action="show" id="${documentoAnexoInstance?.t405CTipodoc?.id}">${documentoAnexoInstance?.t405CTipodoc?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="solicitud-label"><g:link controller="solicitud" action="show" id="${documentoAnexoInstance?.solicitud?.id}">${documentoAnexoInstance?.solicitud?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${documentoAnexoInstance?.tipoDocumento}">
+				<li class="fieldcontain">
+					<span id="tipoDocumento-label" class="property-label"><g:message code="documentoAnexo.tipoDocumento.label" default="Tipo Documento" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoDocumento-label"><g:link controller="tipoDocumento" action="show" id="${documentoAnexoInstance?.tipoDocumento?.id}">${documentoAnexoInstance?.tipoDocumento?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -2,17 +2,23 @@ package mx.amib.sistemas.solicitud
 
 class ArchivoDocumentoAnexo {
 
-	byte[] blDocanexo
-	String txTipo
-	DocumentoAnexo t402TDocanexo
+	byte[] archivo
+	String tipo
+	DocumentoAnexo documentoAnexo
 
 	static belongsTo = [DocumentoAnexo]
 
 	static mapping = {
+		table 't403_t_archivodocanexo'
+		
+		archivo column: 'bl_docanexo'
+		tipo column: 'tx_tipo'
+		documentoAnexo column: 'id_402_docanexo'
+		
 		version false
 	}
 
 	static constraints = {
-		txTipo maxSize: 16
+		tipo maxSize: 16
 	}
 }

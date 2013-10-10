@@ -24,11 +24,11 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="txTipo" title="${message(code: 'archivoDocumentoAnexo.txTipo.label', default: 'Tx Tipo')}" />
+						<g:sortableColumn property="tipo" title="${message(code: 'archivoDocumentoAnexo.tipo.label', default: 'Tipo')}" />
 					
-						<g:sortableColumn property="blDocanexo" title="${message(code: 'archivoDocumentoAnexo.blDocanexo.label', default: 'Bl Docanexo')}" />
+						<g:sortableColumn property="archivo" title="${message(code: 'archivoDocumentoAnexo.archivo.label', default: 'Archivo')}" />
 					
-						<th><g:message code="archivoDocumentoAnexo.t402TDocanexo.label" default="T402 TD ocanexo" /></th>
+						<th><g:message code="archivoDocumentoAnexo.documentoAnexo.label" default="Documento Anexo" /></th>
 					
 					</tr>
 				</thead>
@@ -36,11 +36,11 @@
 				<g:each in="${archivoDocumentoAnexoInstanceList}" status="i" var="archivoDocumentoAnexoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${archivoDocumentoAnexoInstance.id}">${fieldValue(bean: archivoDocumentoAnexoInstance, field: "txTipo")}</g:link></td>
+						<td><g:link action="show" id="${archivoDocumentoAnexoInstance.id}">${fieldValue(bean: archivoDocumentoAnexoInstance, field: "tipo")}</g:link></td>
 					
-						<td>${fieldValue(bean: archivoDocumentoAnexoInstance, field: "blDocanexo")}</td>
+						<td>${fieldValue(bean: archivoDocumentoAnexoInstance, field: "archivo")}</td>
 					
-						<td>${fieldValue(bean: archivoDocumentoAnexoInstance, field: "t402TDocanexo")}</td>
+						<td>${fieldValue(bean: archivoDocumentoAnexoInstance, field: "documentoAnexo")}</td>
 					
 					</tr>
 				</g:each>

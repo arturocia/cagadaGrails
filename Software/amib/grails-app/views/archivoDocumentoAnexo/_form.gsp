@@ -2,27 +2,27 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: archivoDocumentoAnexoInstance, field: 'txTipo', 'error')} ">
-	<label for="txTipo">
-		<g:message code="archivoDocumentoAnexo.txTipo.label" default="Tx Tipo" />
+<div class="fieldcontain ${hasErrors(bean: archivoDocumentoAnexoInstance, field: 'tipo', 'error')} ">
+	<label for="tipo">
+		<g:message code="archivoDocumentoAnexo.tipo.label" default="Tipo" />
 		
 	</label>
-	<g:textField name="txTipo" maxlength="16" value="${archivoDocumentoAnexoInstance?.txTipo}"/>
+	<g:textField name="tipo" maxlength="16" value="${archivoDocumentoAnexoInstance?.tipo}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: archivoDocumentoAnexoInstance, field: 'blDocanexo', 'error')} required">
-	<label for="blDocanexo">
-		<g:message code="archivoDocumentoAnexo.blDocanexo.label" default="Bl Docanexo" />
+<div class="fieldcontain ${hasErrors(bean: archivoDocumentoAnexoInstance, field: 'archivo', 'error')} required">
+	<label for="archivo">
+		<g:message code="archivoDocumentoAnexo.archivo.label" default="Archivo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<input type="file" id="blDocanexo" name="blDocanexo" />
+	<input type="file" id="archivo" name="archivo" />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: archivoDocumentoAnexoInstance, field: 't402TDocanexo', 'error')} required">
-	<label for="t402TDocanexo">
-		<g:message code="archivoDocumentoAnexo.t402TDocanexo.label" default="T402 TD ocanexo" />
+<div class="fieldcontain ${hasErrors(bean: archivoDocumentoAnexoInstance, field: 'documentoAnexo', 'error')} required">
+	<label for="documentoAnexo">
+		<g:message code="archivoDocumentoAnexo.documentoAnexo.label" default="Documento Anexo" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="t402TDocanexo" name="t402TDocanexo.id" from="${mx.amib.sistemas.solicitud.DocumentoAnexo.list()}" optionKey="id" required="" value="${archivoDocumentoAnexoInstance?.t402TDocanexo?.id}" class="many-to-one"/>
+	<g:select id="documentoAnexo" name="documentoAnexo.id" from="${mx.amib.sistemas.solicitud.DocumentoAnexo.list()}" optionKey="id" required="" value="${archivoDocumentoAnexoInstance?.documentoAnexo?.id}" class="many-to-one"/>
 </div>
 

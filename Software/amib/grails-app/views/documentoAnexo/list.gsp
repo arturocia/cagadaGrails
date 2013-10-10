@@ -24,9 +24,9 @@
 				<thead>
 					<tr>
 					
-						<th><g:message code="documentoAnexo.t401TSolicitud.label" default="T401 TS olicitud" /></th>
+						<th><g:message code="documentoAnexo.solicitud.label" default="Solicitud" /></th>
 					
-						<th><g:message code="documentoAnexo.t405CTipodoc.label" default="T405 CT ipodoc" /></th>
+						<th><g:message code="documentoAnexo.tipoDocumento.label" default="Tipo Documento" /></th>
 					
 					</tr>
 				</thead>
@@ -34,9 +34,9 @@
 				<g:each in="${documentoAnexoInstanceList}" status="i" var="documentoAnexoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${documentoAnexoInstance.id}">${fieldValue(bean: documentoAnexoInstance, field: "t401TSolicitud")}</g:link></td>
+						<td><g:link action="show" id="${documentoAnexoInstance.id}">${fieldValue(bean: documentoAnexoInstance, field: "solicitud")}</g:link></td>
 					
-						<td>${fieldValue(bean: documentoAnexoInstance, field: "t405CTipodoc")}</td>
+						<td>${fieldValue(bean: documentoAnexoInstance, field: "tipoDocumento")}</td>
 					
 					</tr>
 				</g:each>

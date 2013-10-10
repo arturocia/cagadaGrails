@@ -4,13 +4,18 @@ import mx.amib.sistemas.solicitud.catalogo.TipoDocumento;
 
 class DocumentoAnexo {
 
-	TipoDocumento t405CTipodoc
-	Solicitud t401TSolicitud
+	TipoDocumento tipoDocumento
+	Solicitud solicitud
 
-	static hasMany = [t403TArchivodocanexos: ArchivoDocumentoAnexo]
+	static hasMany = [archivoDocumentoAnexo: ArchivoDocumentoAnexo]
 	static belongsTo = [Solicitud, TipoDocumento]
 
 	static mapping = {
+		table 't402_t_docanexo'
+		
+		tipoDocumento column: 'id_405_tipodoc'
+		solicitud column: 'id_401_solicitud'
+		
 		version false
 	}
 }

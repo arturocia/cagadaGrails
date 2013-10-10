@@ -24,17 +24,17 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="nuFolioacredetica" title="${message(code: 'solicitud.nuFolioacredetica.label', default: 'Nu Folioacredetica')}" />
+						<g:sortableColumn property="folioAcreditacionEtica" title="${message(code: 'solicitud.folioAcreditacionEtica.label', default: 'Folio Acreditacion Etica')}" />
 					
-						<g:sortableColumn property="nuMatriculaamib" title="${message(code: 'solicitud.nuMatriculaamib.label', default: 'Nu Matriculaamib')}" />
+						<g:sortableColumn property="matriculaAmib" title="${message(code: 'solicitud.matriculaAmib.label', default: 'Matricula Amib')}" />
 					
-						<g:sortableColumn property="nuFolioautorizacion" title="${message(code: 'solicitud.nuFolioautorizacion.label', default: 'Nu Folioautorizacion')}" />
+						<g:sortableColumn property="folioAutorizacion" title="${message(code: 'solicitud.folioAutorizacion.label', default: 'Folio Autorizacion')}" />
 					
-						<g:sortableColumn property="txModactcerti" title="${message(code: 'solicitud.txModactcerti.label', default: 'Tx Modactcerti')}" />
+						<g:sortableColumn property="valorModalidadActualizacionCertificacion" title="${message(code: 'solicitud.valorModalidadActualizacionCertificacion.label', default: 'Valor Modalidad Actualizacion Certificacion')}" />
 					
-						<g:sortableColumn property="txOtroinstcapac" title="${message(code: 'solicitud.txOtroinstcapac.label', default: 'Tx Otroinstcapac')}" />
+						<g:sortableColumn property="otroInstitutoCapacitador" title="${message(code: 'solicitud.otroInstitutoCapacitador.label', default: 'Otro Instituto Capacitador')}" />
 					
-						<g:sortableColumn property="nmDiInstitucion" title="${message(code: 'solicitud.nmDiInstitucion.label', default: 'Nm Di Institucion')}" />
+						<g:sortableColumn property="datoIntermediarioInstitucion" title="${message(code: 'solicitud.datoIntermediarioInstitucion.label', default: 'Dato Intermediario Institucion')}" />
 					
 					</tr>
 				</thead>
@@ -42,17 +42,17 @@
 				<g:each in="${solicitudInstanceList}" status="i" var="solicitudInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${solicitudInstance.id}">${fieldValue(bean: solicitudInstance, field: "nuFolioacredetica")}</g:link></td>
+						<td><g:link action="show" id="${solicitudInstance.id}">${fieldValue(bean: solicitudInstance, field: "folioAcreditacionEtica")}</g:link></td>
 					
-						<td>${fieldValue(bean: solicitudInstance, field: "nuMatriculaamib")}</td>
+						<td>${fieldValue(bean: solicitudInstance, field: "matriculaAmib")}</td>
 					
-						<td>${fieldValue(bean: solicitudInstance, field: "nuFolioautorizacion")}</td>
+						<td>${fieldValue(bean: solicitudInstance, field: "folioAutorizacion")}</td>
 					
-						<td>${fieldValue(bean: solicitudInstance, field: "txModactcerti")}</td>
+						<td>${fieldValue(bean: solicitudInstance, field: "valorModalidadActualizacionCertificacion")}</td>
 					
-						<td>${fieldValue(bean: solicitudInstance, field: "txOtroinstcapac")}</td>
+						<td>${fieldValue(bean: solicitudInstance, field: "otroInstitutoCapacitador")}</td>
 					
-						<td>${fieldValue(bean: solicitudInstance, field: "nmDiInstitucion")}</td>
+						<td>${fieldValue(bean: solicitudInstance, field: "datoIntermediarioInstitucion")}</td>
 					
 					</tr>
 				</g:each>

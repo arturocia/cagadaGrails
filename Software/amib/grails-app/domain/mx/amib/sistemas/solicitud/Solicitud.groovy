@@ -11,49 +11,75 @@ import mx.amib.sistemas.solicitud.catalogo.TipoExamen;
 import mx.amib.sistemas.solicitud.catalogo.ModalidadCapacitacion;
 import mx.amib.sistemas.solicitud.catalogo.HorarioExamen;
 
-class Solicitud {
-
-	Date fhSolicitud
-	Integer nuFolioacredetica
-	Integer nuMatriculaamib
-	Integer nuFolioautorizacion
-	String txModactcerti
-	String txOtroinstcapac
-	String nmDiInstitucion
-	String txDiPuesto
-	Date fhDiIniciolaborles
-	Date fhDiConsulrepcredesp
-	String nmDfRazonsocial
-	String txDfCorreofactura
-	FormaPago t407CFormapago
-	TipoExamen t409CTipoexamen
-	Solicitante t301TSolicitante
-	ModalidadCertificacion t412CModalactcert
-	TipoServicio t406CTiposervicio
-	HorarioExamen t411CHorarioexamen
-	InstitutoCapacitador t413CInstitutocapacitador
-	ModalidadCapacitacion t410CModalcapacitacion
-	Figura t408CFigura
-	StatusSolicitud t404CStatussolicitud
-
-	static hasMany = [t402TDocanexos: DocumentoAnexo]
+class Solicitud {	
+	Date fechaSolicitud
+	Integer folioAcreditacionEtica
+	Integer matriculaAmib
+	Integer folioAutorizacion
+	String valorModalidadActualizacionCertificacion
+	String otroInstitutoCapacitador
+	String datoIntermediarioInstitucion
+	String datoIntermediarioPuesto
+	Date datoIntermediarioFechaInicioLabores
+	Date datoIntermediarioFechaConsultaReporteCE
+	String datoFactuacionRazonSocial
+	String datoFacturacionCorreoEFactura
+	
+	FormaPago formaPago
+	TipoExamen tipoExamen
+	Solicitante solicitante
+	ModalidadCertificacion modalidadActCertificacion
+	TipoServicio tipoServicio
+	HorarioExamen horarioExamen
+	InstitutoCapacitador institutoCapacitador
+	ModalidadCapacitacion modalidadCapacitacion
+	Figura figura
+	StatusSolicitud statusSolicitud
+	
+	static hasMany = [documentosAnexos: DocumentoAnexo]
 	static belongsTo = [Solicitante, StatusSolicitud, TipoServicio, FormaPago, Figura, TipoExamen, ModalidadCapacitacion, HorarioExamen, ModalidadCertificacion, InstitutoCapacitador]
 
 	static mapping = {
+		table 't401_t_solicitud'
+		
+		fechaSolicitud column: 'fh_solicitud'
+		folioAcreditacionEtica column: 'nu_folioacredetica'
+		matriculaAmib column: 'nu_matriculaamib'
+		folioAutorizacion column: 'nu_folioautorizacion'
+		valorModalidadActualizacionCertificacion column: 'tx_modactcerti'
+		otroInstitutoCapacitador column: 'tx_otroinstcapac'
+		datoIntermediarioInstitucion column: 'nm_di_institucion'
+		datoIntermediarioPuesto column: 'tx_di_puesto'
+		datoIntermediarioFechaInicioLabores column: 'fh_di_iniciolaborles'
+		datoIntermediarioFechaConsultaReporteCE column: 'fh_di_consulrepcredesp'
+		datoFactuacionRazonSocial column: 'nm_df_razonsocial'
+		datoFacturacionCorreoEFactura column: 'tx_df_correofactura'
+		
+		formaPago column: 'id_407_formapago'
+		tipoExamen column: 'id_409_tipoexamen'
+		solicitante column: 'id_301_solicitante'
+		modalidadActCertificacion column: 'id_412_modalactcert'
+		tipoServicio column: 'id_406_tiposervicio'
+		horarioExamen column: 'id_411_horarioexamen'
+		institutoCapacitador column: 'id_413_institutocapacitador'
+		modalidadCapacitacion column: 'id_410_modalcapacitacion'
+		figura column: 'id_408_figura'
+		statusSolicitud column: 'id_404_statussolicitud'
+		
 		version false
 	}
 
 	static constraints = {
-		nuFolioacredetica nullable: true
-		nuMatriculaamib nullable: true
-		nuFolioautorizacion nullable: true
-		txModactcerti nullable: true, maxSize: 20
-		txOtroinstcapac maxSize: 200
-		nmDiInstitucion nullable: true, maxSize: 200
-		txDiPuesto nullable: true, maxSize: 100
-		fhDiIniciolaborles nullable: true
-		fhDiConsulrepcredesp nullable: true
-		nmDfRazonsocial nullable: true, maxSize: 254
-		txDfCorreofactura nullable: true, maxSize: 254
+		folioAcreditacionEtica nullable: true
+		matriculaAmib nullable: true
+		folioAutorizacion nullable: true
+		valorModalidadActualizacionCertificacion nullable: true, maxSize: 20
+		otroInstitutoCapacitador maxSize: 200
+		datoIntermediarioInstitucion nullable: true, maxSize: 200
+		datoIntermediarioPuesto nullable: true, maxSize: 100
+		datoIntermediarioFechaInicioLabores nullable: true
+		datoIntermediarioFechaConsultaReporteCE nullable: true
+		datoFactuacionRazonSocial nullable: true, maxSize: 254
+		datoFacturacionCorreoEFactura nullable: true, maxSize: 254
 	}
 }

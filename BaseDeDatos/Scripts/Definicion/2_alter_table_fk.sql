@@ -16,7 +16,7 @@ alter table t401_t_solicitud add index fk_411_401 (id_411_horarioexamen), add co
 alter table t401_t_solicitud add index fk_412_401 (id_412_modalactcert), add constraint fk_412_401 foreign key (id_412_modalactcert) references t412_c_modalactcert (id);
 alter table t401_t_solicitud add index fk_413_401 (id_413_institutocapacitador), add constraint fk_413_401 foreign key (id_413_institutocapacitador) references t413_c_institutocapacitador (id);
 alter table t401_t_solicitud add index fk_404_401 (id_404_statussolicitud), add constraint fk_404_401 foreign key (id_404_statussolicitud) references t404_c_statussolicitud (id);
-alter table t101_t_usuario add index fk_101_301 (id_301_solicitante), add constraint fk_101_301 foreign key (id_301_solicitante) references t301_t_solicitante (id);
+alter table t301_t_solicitante add index fk_101_301 (id_101_usuario), add constraint fk_101_301 foreign key (id_101_usuario) references t101_t_usuario (id);
 alter table t202_c_municipio add index fk_201_202 (id_201_entidadfed), add constraint fk_201_202 foreign key (id_201_entidadfed) references t201_c_entidadfed (id);
 alter table t203_c_asentamiento add index fk_202_203 (id_202_municipio), add constraint fk_202_203 foreign key (id_202_municipio) references t202_c_municipio (id);
 alter table t204_c_ciudad add index fk_202_204 (id_202_municipio), add constraint fk_202_204 foreign key (id_202_municipio) references t202_c_municipio (id);

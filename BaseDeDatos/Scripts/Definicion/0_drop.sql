@@ -15,7 +15,7 @@ alter table t401_t_solicitud drop foreign key fk_411_401;
 alter table t401_t_solicitud drop foreign key fk_412_401;
 alter table t401_t_solicitud drop foreign key fk_413_401;
 alter table t401_t_solicitud drop foreign key fk_404_401;
-alter table t101_t_usuario drop foreign key fk_101_301;
+alter table t301_t_solicitante drop foreign key fk_101_301;
 alter table t202_c_municipio drop foreign key fk_201_202;
 alter table t203_c_asentamiento drop foreign key fk_202_203;
 alter table t204_c_ciudad drop foreign key fk_202_204;

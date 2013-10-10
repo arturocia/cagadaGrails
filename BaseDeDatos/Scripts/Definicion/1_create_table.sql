@@ -12,16 +12,19 @@ create table t413_c_institutocapacitador (id int(10) not null auto_increment, nm
 create table t402_t_docanexo (id_401_solicitud int(10) not null, id_405_tipodoc int(10) not null, id int(10) not null auto_increment, constraint unq_402 unique (id_401_solicitud,id_405_tipodoc), primary key (id)) ENGINE=InnoDB;
 create table t405_c_tipodoc (id int(10) not null auto_increment, ds_tipodoc varchar(150) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
 create table t403_t_archivodocanexo (id_402_docanexo int(10) not null, id int(10) not null auto_increment, bl_docanexo blob not null, tx_tipo varchar(16) not null, primary key (id)) ENGINE=InnoDB;
+
 create table t303_t_puesto (id_301_solicitante int(10) not null, id int(10) not null auto_increment, tx_empresa varchar(100) not null, fh_inicio date not null, fh_termino date, tx_puesto varchar(100) not null, primary key (id)) ENGINE=InnoDB;
 create table t302_t_archivofoto (id_301_solicitante int(10) not null, id int(10) not null auto_increment, bl_archivofoto blob not null, tx_tipo varchar(16) not null, primary key (id)) ENGINE=InnoDB;
-create table t101_t_usuario (id int(10) not null auto_increment, id_301_solicitante int(10), tx_usuario varchar(254) not null, tx_contrasena varchar(32) not null, primary key (id)) ENGINE=InnoDB;
+
+create table t101_t_usuario (id int(10) not null auto_increment, tx_usuario varchar(254) not null, tx_contrasena varchar(32) not null, primary key (id)) ENGINE=InnoDB;
+
 create table t301_t_solicitante (id int(10) not null auto_increment, nm_apaterno varchar(100) not null, nm_amaterno varchar(100) not null, nm_nombrepila varchar(100) not null, tx_rfc varchar(13) not null, tx_curp varchar(18), tx_correopersonal varchar(254) not null, tx_lugarnacimiento varchar(100) not null, fh_fechanacimiento date not null, st_genero varchar(1) not null comment '''M'' o ''F''', st_estadocivil varchar(1) not null, tx_calle varchar(100) not null, tx_numext varchar(35) not null, id_304_nacionalidad int(10) not null, st_nacmexnatural tinyint(1), id_305_nivelestudios int(10) not null, id_205_sepomex int(10) not null, primary key (id)) ENGINE=InnoDB;
 create table t306_t_telefonosolicitante (id_301_solicitante int(10) not null, id int(10) not null auto_increment, id_307_tipotelefono int(10) not null, nu_lada varchar(6), nu_telefono varchar(50) not null, nu_extension varchar(6), primary key (id)) ENGINE=InnoDB;
 create table t307_c_tipotelefono (id int(10) not null auto_increment, ds_tipotelefono varchar(100) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
 
-create table t205_c_sepomex (id int(10) not null auto_increment, id_203_asentamiento int(11) not null, id_204_ciudad int(11), cve_codigopostal varchar(5) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
-create table t201_c_entidadfed (id int(11) not null auto_increment, cve_entidadfed varchar(2) not null unique, nm_entidadfed varchar(100) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
-create table t202_c_municipio (id_201_entidadfed int(11) not null, id int(11) not null auto_increment, cve_municipio varchar(3) not null, nm_municipio varchar(150) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
-create table t204_c_ciudad (id_202_municipio int(11) not null, id int(11) not null auto_increment, cve_ciudad varchar(2) not null, nm_ciudad varchar(255) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
-create table t203_c_asentamiento (id_202_municipio int(11) not null, id int(11) not null auto_increment, cve_asentamiento varchar(4) not null, nm_asentamiento varchar(255) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
+create table t205_c_sepomex (id int(10) not null auto_increment, id_203_asentamiento int(10) not null, id_204_ciudad int(10), cve_codigopostal varchar(5) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
+create table t201_c_entidadfed (id int(10) not null auto_increment, cve_entidadfed varchar(2) not null unique, nm_entidadfed varchar(100) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
+create table t202_c_municipio (id_201_entidadfed int(10) not null, id int(10) not null auto_increment, cve_municipio varchar(3) not null, nm_municipio varchar(150) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
+create table t204_c_ciudad (id_202_municipio int(10) not null, id int(10) not null auto_increment, cve_ciudad varchar(2) not null, nm_ciudad varchar(255) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
+create table t203_c_asentamiento (id_202_municipio int(10) not null, id int(10) not null auto_increment, cve_asentamiento varchar(4) not null, nm_asentamiento varchar(255) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
 create table t404_c_statussolicitud (id int(10) not null auto_increment, ds_statussolicitud varchar(100) not null, st_vigente tinyint(1) not null, primary key (id)) ENGINE=InnoDB;
